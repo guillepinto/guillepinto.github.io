@@ -11,7 +11,7 @@ last_name: Pinto
 
 # Status emoji
 status:
-  icon: 🐈
+  icon: 🦁
 
 # Is this the primary user of the site?
 superuser: true
@@ -84,8 +84,7 @@ skills:
       - name: Volleyball
         description: ''
         percent: 70
-        icon: volleyball
-        icon_pack: custom
+        icon: custom/volleyball
       - name: Travel
         description: ''
         percent: 80
@@ -106,16 +105,14 @@ awards:
     url: https://learn.nvidia.com/certificates?id=24xlRjrAQz-BdZPlW53Vig
     date: '2025-01-15'
     awarder: NVIDIA
-    icon: nvidia
-    icon_pack: custom
+    icon: custom/nvidia
     summary: |
       I explored the principles behind generative models. By the end of the course, I was able to build and train a U-Net to generate images from pure noise, enhance image quality using the denoising diffusion process, and incorporate context embeddings to control image outputs. Additionally, I could generate images from English text prompts by leveraging the Contrastive Language-Image Pretraining (CLIP) neural network, bridging the gap between visual and linguistic representations.
   - title: Networking Basics
     url: https://www.credly.com/badges/f3cb101f-e1b8-4f01-b9a4-a7f769782cfa/linked_in_profile
     date: '2024-05-21'
     awarder: Cisco
-    icon: cisco
-    icon_pack: custom
+    icon: custom/cisco
     summary: |
       Learned:
       - How networks function, including data transmission and cabling types
