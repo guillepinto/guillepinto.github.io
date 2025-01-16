@@ -85,6 +85,7 @@ skills:
         description: ''
         percent: 70
         icon: custom/volleyball
+        icon_pack: custom
       - name: Travel
         description: ''
         percent: 80
@@ -106,6 +107,7 @@ awards:
     date: '2025-01-15'
     awarder: NVIDIA
     icon: custom/nvidia
+    icon_pack: custom
     summary: |
       I explored the principles behind generative models. By the end of the course, I was able to build and train a U-Net to generate images from pure noise, enhance image quality using the denoising diffusion process, and incorporate context embeddings to control image outputs. Additionally, I could generate images from English text prompts by leveraging the Contrastive Language-Image Pretraining (CLIP) neural network, bridging the gap between visual and linguistic representations.
   - title: Networking Basics
@@ -113,6 +115,7 @@ awards:
     date: '2024-05-21'
     awarder: Cisco
     icon: custom/cisco
+    icon_pack: custom
     summary: |
       Learned:
       - How networks function, including data transmission and cabling types
