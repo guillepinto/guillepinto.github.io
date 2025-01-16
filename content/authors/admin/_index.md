@@ -28,7 +28,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:guillermo2210069@correo.uis.edu.com'
+    url: 'mailto:guillermo2210069@correo.uis.edu.co'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/guillepinto_
@@ -84,7 +84,11 @@ skills:
       - name: Volleyball
         description: ''
         percent: 70
-        icon: 🏐
+        icon: custom/volleyball
+      - name: Travel
+        description: ''
+        percent: 80
+        icon: person-simple-walk
 
 languages:
   - name: Spanish
