@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Guillermo Pinto
+title: Hi, I'm Guillermo Pinto
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -119,5 +119,8 @@ awards:
       - IP addressing, Internet data routing, and transport layer operations
       - Built a home wireless network and completed 13 Packet Tracer activities
 ---
+
+# _{{< quotes >}}_
+
 
 I am an ninth-semester Systems Engineering student at Universidad Industrial de Santander, passionate about Deep Learning and Computer Vision convinced that AI has a huge potential to positively transform people’s lives. I am currently working on thermal imaging projects, focusing on range, emissivity, and temperature estimation. Furthermore, I have a strong interest in artificial intelligence research, and I am dedicated to advancing my work in this field through focused research initiatives.

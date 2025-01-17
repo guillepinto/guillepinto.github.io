@@ -11,7 +11,7 @@ design:
 
 # Page sections
 sections:
-  - block: biography
+  - block: my-resume-biography
     content:
       username: admin
       # Show a call-to-action button under your biography? (optional)
@@ -25,7 +25,7 @@ sections:
         filename: german-rojas-panorama-4858238_1920-pixabay.jpg
       biography:
         # Customize the style of your biography text
-        style: 'text-align: justify; font-size: 0.8em;'
+        style: 'text-align: justify; font-size: 0.8em; padding-left: 1.5rem; padding-right: 1.5rem;'
   - block: experience
     content:
       username: admin
