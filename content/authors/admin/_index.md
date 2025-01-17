@@ -105,14 +105,14 @@ awards:
     url: https://learn.nvidia.com/certificates?id=24xlRjrAQz-BdZPlW53Vig
     date: '2025-01-15'
     awarder: NVIDIA
-    icon: custom/nvidia
+    icon: nvidia
     summary: |
       I explored the principles behind generative models. By the end of the course, I was able to build and train a U-Net to generate images from pure noise, enhance image quality using the denoising diffusion process, and incorporate context embeddings to control image outputs. Additionally, I could generate images from English text prompts by leveraging the Contrastive Language-Image Pretraining (CLIP) neural network, bridging the gap between visual and linguistic representations.
   - title: Networking Basics
     url: https://www.credly.com/badges/f3cb101f-e1b8-4f01-b9a4-a7f769782cfa/linked_in_profile
     date: '2024-05-21'
     awarder: Cisco
-    icon: custom/cisco
+    icon: cisco
     summary: |
       Learned:
       - How networks function, including data transmission and cabling types
