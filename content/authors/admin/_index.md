@@ -50,7 +50,7 @@ education:
       Courses included:
       - Digital Image Processing
       - Artificial Intelligence
-      - Convex Optimization
+      - Statistics
 work:
   - position: I'd like to start my journey with you 🫣
     company_name: Your company
