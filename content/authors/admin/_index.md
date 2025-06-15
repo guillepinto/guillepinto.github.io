@@ -101,6 +101,13 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
+  - title: Fundamentals of Deep Learning
+    url: https://learn.nvidia.com/certificates?id=VrpRAWQNSB2tzKL2YDnWRA
+    date: '2025-02-09'
+    awarder: NVIDIA
+    icon: nvidia
+    summary: |
+      I learned how deep learning works through hands-on exercises in computer vision and natural language processing. I trained deep learning models from scratch, mastering tools and techniques to achieve highly accurate results in tasks such as image recognition and language translation. Additionally, I gained experience leveraging state-of-the-art pre-trained models to save time and accelerate deep learning applications. The workshop taught me how multi-layered artificial neural networks can recognize complex patterns in data that are too subtle for traditional expert-written software.
   - title: Generative AI with Diffusion Models
     url: https://learn.nvidia.com/certificates?id=24xlRjrAQz-BdZPlW53Vig
     date: '2025-01-15'
