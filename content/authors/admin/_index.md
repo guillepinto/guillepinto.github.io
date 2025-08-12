@@ -45,7 +45,7 @@ education:
     date_start: 2021-01-01
     date_end: 2025-12-31
     summary: |
-      GPA: 4.45/5.0
+      GPA: 4.44/5.0
       
       Courses included:
       - Digital Image Processing
@@ -130,4 +130,4 @@ awards:
 # _{{< quotes >}}_
 
 
-I am an ninth-semester Systems Engineering student at Universidad Industrial de Santander, passionate about Deep Learning and Computer Vision convinced that AI has a huge potential to positively transform people’s lives. I am currently working on thermal imaging projects, focusing on range, emissivity, and temperature estimation. Furthermore, I have a strong interest in artificial intelligence research, and I am dedicated to advancing my work in this field through focused research initiatives.
+I am an tenth-semester Systems Engineering student at Universidad Industrial de Santander, passionate about Deep Learning and Computer Vision convinced that AI has a huge potential to positively transform people’s lives. I am currently working on thermal imaging projects, focusing on range, emissivity, and temperature estimation. Furthermore, I have a strong interest in artificial intelligence research, and I am dedicated to advancing my work in this field through focused research initiatives.
