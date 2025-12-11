@@ -34,14 +34,10 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
-  - block: skills
-    content:
-      title: Skills & Hobbies
-      username: admin
   - block: collection
     content:
       title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      text: I enjoy making things. Here are some projects that I have worked on over the years.
       filters:
         folders:
           - projects
@@ -54,8 +50,6 @@ sections:
     content:
       title: Certifications
       username: admin
-  - block: languages
-    content:
-      title: Languages
-      username: admin
+    design:
+      columns: 3
 ---

@@ -45,56 +45,53 @@ education:
     date_start: 2021-01-01
     date_end: 2025-12-31
     summary: |
-      GPA: 4.44/5.0
+      GPA: 4.47/5.0
       
       Courses included:
       - Digital Image Processing
       - Artificial Intelligence
       - Statistics
 work:
-  - position: I'd like to start my journey with you 🫣
-    company_name: Your company
-    company_url: ''
+  - position: Undergraduate Research Assistant
+    company_name: Universidad Industrial de Santander
+    company_url: 'http://uis.edu.co/'
     company_logo: ''
-    date_start: ''
-    date_end: ''
+    date_start: '2025-08-25'
+    date_end: '2025-11-21'
     summary: |2-
-      Responsibilities include:
-      - Learn as much as I can
-      - Be curious, patient and resilient
-      - Problem solving
+      Figure out how to do supervised training with a dataset without labels and then I ended up learning how to do 3D to 2D registration to get some labels using CloudCompare for passive monocular depth estimation with hyperspectral long-wave imagery.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 85
-        icon: devicon/python
-      - name: PyTorch
-        description: ''
-        percent: 70
-        icon: devicon/pytorch
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Volleyball
-        description: ''
-        percent: 70
-        icon: custom/volleyball
-      - name: Travel
-        description: ''
-        percent: 80
-        icon: person-simple-walk
+# skills:
+#   - name: Technical Skills
+#     items:
+#       - name: Python
+#         description: ''
+#         percent: 85
+#         icon: devicon/python
+#       - name: PyTorch
+#         description: ''
+#         percent: 70
+#         icon: devicon/pytorch
+#   - name: Hobbies
+#     color: '#eeac02'
+#     color_border: '#f0bf23'
+#     items:
+#       - name: Volleyball
+#         description: ''
+#         percent: 70
+#         icon: custom/volleyball
+#       - name: Travel
+#         description: ''
+#         percent: 80
+#         icon: person-simple-walk
 
-languages:
-  - name: Spanish
-    percent: 100
-  - name: English
-    percent: 75
+# languages:
+#   - name: Spanish
+#     percent: 100
+#   - name: English
+#     percent: 75
 
 # Awards.
 #   Add/remove as many awards below as you like.
