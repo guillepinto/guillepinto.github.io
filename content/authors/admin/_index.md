@@ -45,7 +45,7 @@ education:
     date_start: 2021-01-01
     date_end: 2025-12-31
     summary: |
-      GPA: 4.47/5.0
+      GPA: 4.48/5.0
       
       Courses included:
       - Digital Image Processing
