@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Hi, I'm Guillermo Pinto
+title: Hi, I'm Guillermo Pinto Ruiz
 
 # Name pronunciation (optional)
 name_pronunciation: ''
