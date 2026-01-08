@@ -31,11 +31,11 @@ profiles:
     url: 'mailto:guillermo2210069@correo.uis.edu.co'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/guillepintoruiz
+    url: https://twitter.com/gllpinto
   - icon: brands/github
-    url: https://github.com/guillepintoruiz
+    url: https://github.com/gllpinto
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/guillepintoruiz/
+    url: https://www.linkedin.com/in/gllpinto/
   - icon: academicons/orcid
     url: https://orcid.org/0009-0001-1356-3553
 

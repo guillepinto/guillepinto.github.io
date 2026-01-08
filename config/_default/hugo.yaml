@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Guillermo Pinto Ruiz @guillepintoruiz # Website name
+title: Guillermo Pinto Ruiz @gllpinto # Website name
 baseURL: 'https://example.com/' # Website URL
 
 ############################

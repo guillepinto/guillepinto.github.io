@@ -1,7 +1,7 @@
 ---
 title: Moview
 date: 2023-07-12
-external_link: https://github.com/guillepintoruiz/moview
+external_link: https://github.com/gllpinto/moview
 tags:
   - React.js
 ---

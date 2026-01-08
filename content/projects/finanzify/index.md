@@ -1,7 +1,7 @@
 ---
 title: Finanzify
 date: 2024-07-07
-external_link: https://github.com/guillepintoruiz/finanzify
+external_link: https://github.com/gllpinto/finanzify
 tags:
   - Angular
 ---
