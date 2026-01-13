@@ -33,9 +33,9 @@ profiles:
   - icon: brands/x
     url: https://twitter.com/gllpinto
   - icon: brands/github
-    url: https://github.com/gllpinto
+    url: https://github.com/guillepinto
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/gllpinto/
+    url: https://www.linkedin.com/in/guillepinto/
   - icon: academicons/orcid
     url: https://orcid.org/0009-0001-1356-3553
 

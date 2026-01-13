@@ -1,7 +1,7 @@
 ---
 title: Malaria Parasite Detection and Classification
 date: 2024-12-06
-external_link: https://github.com/gllpinto/Malaria-Object-Detection-AI
+external_link: https://github.com/guillepinto/Malaria-Object-Detection-AI
 tags:
   - Pytorch
 ---
