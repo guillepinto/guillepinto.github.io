@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08110f">
+  <meta name="description" content="IH-Depth is a curated benchmark for monocular metric depth estimation from real-world longwave infrared hyperspectral imagery in off-road environments.">
+  <meta property="og:title" content="IH-Depth — Thermal hyperspectral depth, grounded in LiDAR">
+  <meta property="og:description" content="51 real-world off-road scenes with registered sparse metric depth, cylindrical camera geometry, and a reproducible evaluator.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://guillepinto.github.io/ih-depth/">
+  <meta property="og:image" content="https://guillepinto.github.io/ih-depth/assets/dataset-overview.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>IH-Depth — LWHSI Monocular Metric Depth Benchmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="wordmark" href="#top" aria-label="IH-Depth home">
+        <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>IH–DEPTH</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary navigation" data-nav>
+        <a href="#dataset">Dataset</a>
+        <a href="#curation">Curation</a>
+        <a href="#benchmark">Benchmark</a>
+        <a href="#access">Get started</a>
+        <a class="nav-cta" href="https://huggingface.co/datasets/SemilleroCV/ih-depth" target="_blank" rel="noreferrer">Download <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="spectral-glow spectral-glow-one" aria-hidden="true"></div>
+      <div class="spectral-glow spectral-glow-two" aria-hidden="true"></div>
+      <div class="shell hero-content">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="signal-dot"></span> NeurIPS 2026 · Evaluations &amp; Datasets</p>
+          <h1>Depth beyond<br>the <span class="spectral-text">visible.</span></h1>
+          <p class="hero-lede">IH-Depth is a curated benchmark for monocular metric depth estimation from real-world longwave infrared hyperspectral imagery in challenging off-road environments.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://huggingface.co/datasets/SemilleroCV/ih-depth" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 18v2h14v-2"/></svg>
+              Dataset
+            </a>
+            <a class="button button-secondary" href="https://github.com/cvail-research/ih-depth-dataset" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.88c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.82a9.5 9.5 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.77c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              Code &amp; evaluator
+            </a>
+          </div>
+          <ul class="hero-tags" aria-label="Dataset characteristics">
+            <li>LWHSI</li><li>LiDAR supervision</li><li>Off-road</li><li>CC BY 4.0</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="1">
+          <div class="visual-frame">
+            <div class="visual-topbar">
+              <div class="visual-label"><span></span> Aligned scene preview</div>
+              <div class="visual-coordinates">51.0 / 256λ</div>
+            </div>
+            <div class="comparison" data-comparison style="--position: 54%" role="group" aria-label="Thermal and metric depth image comparison">
+              <img class="comparison-image" src="assets/thermal-scene.webp" srcset="assets/thermal-scene-600.webp 600w, assets/thermal-scene.webp 1200w" sizes="(max-width: 760px) 100vw, 620px" width="1200" height="252" alt="Broadband thermal view of an off-road scene" fetchpriority="high">
+              <div class="comparison-overlay">
+                <img class="comparison-image" src="assets/depth-scene.webp" srcset="assets/depth-scene-600.webp 600w, assets/depth-scene.webp 1200w" sizes="(max-width: 760px) 100vw, 620px" width="1200" height="252" alt="LiDAR-derived metric depth projection of the same scene" fetchpriority="high">
+              </div>
+              <div class="comparison-divider" aria-hidden="true"><span>↔</span></div>
+              <input type="range" min="0" max="100" value="54" aria-label="Compare thermal image with registered depth" data-comparison-slider>
+              <span class="image-chip chip-left">LWHSI</span>
+              <span class="image-chip chip-right">METRIC DEPTH</span>
+            </div>
+            <div class="visual-footer">
+              <span>Drag to inspect</span>
+              <span class="depth-key"><i></i> near <b></b> far</span>
+            </div>
+          </div>
+          <div class="floating-note note-top"><strong>≤ 5 px</strong><span>reprojection RMSE</span></div>
+          <div class="floating-note note-bottom"><strong>×128</strong><span>KITTI-style depth</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stat-band" aria-label="Dataset overview">
+      <div class="shell stat-grid">
+        <div class="stat reveal"><strong>51</strong><span>curated scenes</span></div>
+        <div class="stat reveal" data-delay="1"><strong>256</strong><span>spectral bands</span></div>
+        <div class="stat reveal" data-delay="2"><strong>18</strong><span>physical spots</span></div>
+        <div class="stat reveal" data-delay="3"><strong>4</strong><span>field collections</span></div>
+      </div>
+    </section>
+
+    <section class="section intro" id="dataset">
+      <div class="shell split-layout">
+        <div class="section-heading reveal">
+          <p class="kicker">01 / THE DATASET</p>
+          <h2>A missing benchmark for a promising modality.</h2>
+        </div>
+        <div class="intro-copy reveal" data-delay="1">
+          <p class="lead">Standard monocular depth systems depend on visual cues that become brittle in darkness, low texture, dense vegetation, and strong domain shift.</p>
+          <p>Longwave infrared hyperspectral imaging captures emitted thermal radiance across hundreds of wavelengths. IH-Depth turns raw, unregistered sensing from the public Invisible Headlights collection into trustworthy sparse metric depth supervision for learning and evaluation.</p>
+          <a class="text-link" href="https://registry.opendata.aws/darpa-invisible-headlights/" target="_blank" rel="noreferrer">Explore the source IH collection <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="shell panorama-card reveal">
+        <img src="assets/dataset-overview.webp" srcset="assets/dataset-overview-612.webp 612w, assets/dataset-overview.webp 1224w" sizes="(max-width: 760px) 100vw, 1180px" width="1224" height="552" alt="A thermal hyperspectral scene paired with a colored LiDAR depth projection" loading="lazy" decoding="async">
+        <div class="panorama-caption">
+          <div><span>INPUT</span><strong>Longwave thermal hyperspectral cube</strong></div>
+          <div><span>GROUND TRUTH</span><strong>Sparse registered metric depth</strong></div>
+        </div>
+      </div>
+
+      <div class="shell details-grid">
+        <article class="detail-card reveal">
+          <div class="detail-index">A</div>
+          <h3>Real field data</h3>
+          <p>Off-road and mixed-terrain scenes captured by rotating line-scan instruments—not synthetic renderings.</p>
+        </article>
+        <article class="detail-card reveal" data-delay="1">
+          <div class="detail-index">B</div>
+          <h3>Metric supervision</h3>
+          <p>Cleaned, high-resolution LiDAR is projected into image space with invalid pixels explicitly masked.</p>
+        </article>
+        <article class="detail-card reveal" data-delay="2">
+          <div class="detail-index">C</div>
+          <h3>Benchmark-ready</h3>
+          <p>Fixed train/test splits, camera geometry, correspondences, baseline adapters, and a common evaluator.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section curation-section" id="curation">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <p class="kicker">02 / CURATION</p>
+          <h2>From raw point clouds<br>to reliable labels.</h2>
+          <p class="section-subtitle">A scene-level pipeline designed for the panorama-like geometry of a rotating pushbroom sensor.</p>
+        </div>
+
+        <figure class="overview-figure reveal">
+          <a class="figure-link" href="assets/curation-overview.webp" target="_blank" aria-label="Open the curation overview figure at full resolution">
+            <img src="assets/curation-overview.webp" srcset="assets/curation-overview-450.webp 450w, assets/curation-overview-900.webp 900w, assets/curation-overview.webp 1800w" sizes="(max-width: 760px) 100vw, 1180px" width="1800" height="862" alt="IH-Depth pipeline: scene-level calibration matches LiDAR and LWHSI correspondences with nonlinear least squares, then rasterization, reprojection, and automatic filtering generate accepted depth labels" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Figure 01</span> IH-Depth jointly fits scene-level cylindrical camera geometry, then filters each rasterized LiDAR projection before it enters the benchmark. <a href="assets/curation-overview.webp" target="_blank">Full resolution ↗</a></figcaption>
+        </figure>
+
+        <div class="pipeline">
+          <article class="pipeline-step reveal">
+            <div class="step-top"><span>01</span><i></i></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 35 22 10l5 12 11-7M10 35l17-13 11 13M14 31l24 4"/><circle cx="22" cy="10" r="2"/><circle cx="27" cy="22" r="2"/><circle cx="38" cy="15" r="2"/></svg>
+            <h3>Match</h3>
+            <p>Annotators select at least eight identifiable 2D–3D correspondences per scene.</p>
+          </article>
+          <article class="pipeline-step reveal" data-delay="1">
+            <div class="step-top"><span>02</span><i></i></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h32M8 24h32M8 36h32M15 7v34M33 7v34"/><path class="accent-stroke" d="M15 33c4-12 8-18 18-22"/></svg>
+            <h3>Calibrate</h3>
+            <p>Nonlinear least squares jointly fits cylindrical intrinsics and the LiDAR-to-camera pose.</p>
+          </article>
+          <article class="pipeline-step reveal" data-delay="2">
+            <div class="step-top"><span>03</span><i></i></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="12" cy="28" r="2"/><circle cx="19" cy="17" r="2"/><circle cx="25" cy="30" r="2"/><circle cx="31" cy="13" r="2"/><circle cx="37" cy="25" r="2"/><path class="accent-stroke" d="m8 37 32-26"/></svg>
+            <h3>Clean &amp; project</h3>
+            <p>Statistical outlier removal and front-most rasterization produce sparse metric labels.</p>
+          </article>
+          <article class="pipeline-step reveal" data-delay="3">
+            <div class="step-top"><span>04</span></div>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 25 18 35 40 13"/><path class="accent-stroke" d="M9 10h14M9 16h8M31 35h8"/></svg>
+            <h3>Verify</h3>
+            <p>Quantitative thresholds and visual inspection reject unstable or misaligned projections.</p>
+          </article>
+        </div>
+
+        <div class="quality-row">
+          <div class="quality-copy reveal">
+            <p class="micro-label">QUALITY POLICY</p>
+            <h3>Every accepted scene passes three gates.</h3>
+          </div>
+          <div class="quality-gates reveal" data-delay="1">
+            <div><strong>≤ 5 px</strong><span>reprojection RMSE</span></div>
+            <div><strong>≤ 5%</strong><span>local depth disagreement</span></div>
+            <div><strong>100%</strong><span>qualitatively inspected</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section composition-section">
+      <div class="shell composition-grid">
+        <div class="composition-copy reveal">
+          <p class="kicker">03 / COMPOSITION</p>
+          <h2>Split by place,<br>not just by path.</h2>
+          <p>Different paths in the source collection can revisit the same physical location. IH-Depth groups scenes by physical spot before splitting, reducing overlap and making the test set a harder measure of spatial generalization.</p>
+          <div class="split-card">
+            <div><span>TRAIN</span><strong>41</strong><small>scenes · 11 spots</small></div>
+            <div><span>TEST</span><strong>10</strong><small>scenes · 7 spots</small></div>
+          </div>
+        </div>
+
+        <div class="terrain-card reveal" data-delay="1">
+          <div class="terrain-top">
+            <div>
+              <p class="micro-label">SCENE COVERAGE</p>
+              <h3>Six terrain contexts</h3>
+            </div>
+            <div class="donut" role="img" aria-label="Scene categories: 33.3% open field, 31.4% sandy scrub, 13.7% utility corridor, 13.7% built industrial, 5.9% forest, 2% water"><span><b>51</b> scenes</span></div>
+          </div>
+          <div class="legend">
+            <div><i class="terrain-1"></i><span>Open field</span><strong>33.3%</strong></div>
+            <div><i class="terrain-2"></i><span>Sandy scrub</span><strong>31.4%</strong></div>
+            <div><i class="terrain-3"></i><span>Utility corridor</span><strong>13.7%</strong></div>
+            <div><i class="terrain-4"></i><span>Built industrial</span><strong>13.7%</strong></div>
+            <div><i class="terrain-5"></i><span>Forest</span><strong>5.9%</strong></div>
+            <div><i class="terrain-6"></i><span>Water / wetland</span><strong>2.0%</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benchmark-section" id="benchmark">
+      <div class="shell">
+        <div class="section-heading benchmark-heading reveal">
+          <div>
+            <p class="kicker">04 / BENCHMARK</p>
+            <h2>Three families.<br>One common protocol.</h2>
+          </div>
+          <p>Metrics are evaluated only at valid LiDAR-supported pixels on the 10-scene test split. Lower is better for AbsRel and RMSE.</p>
+        </div>
+
+        <div class="result-callout reveal">
+          <div class="result-copy">
+            <p class="micro-label">STRONGEST INITIAL BASELINE</p>
+            <h3>UniDepthV2–HSI</h3>
+            <p>Adapting the input projection to consume all spectral bands gives the best overall starting point.</p>
+          </div>
+          <div class="metric"><strong>0.489</strong><span>AbsRel ↓</span></div>
+          <div class="metric"><strong>22.194<span>m</span></strong><span>RMSE ↓</span></div>
+          <div class="metric"><strong>0.853</strong><span>SSI-δ<sub>1</sub> ↑</span></div>
+        </div>
+
+        <section class="table-wrap reveal" aria-label="Benchmark results" tabindex="0">
+          <table>
+            <thead>
+              <tr><th scope="col">Input</th><th scope="col">Method</th><th scope="col">AbsRel ↓</th><th scope="col">RMSE (m) ↓</th><th scope="col">SSI-AbsRel ↓</th><th scope="col">SSI-RMSE (m) ↓</th><th scope="col">δ<sub>1</sub> ↑</th><th scope="col">SSI-δ<sub>1</sub> ↑</th></tr>
+            </thead>
+            <tbody>
+              <tr><td rowspan="4"><span class="input-pill">Broadband</span></td><td>Depth Pro</td><td>0.553</td><td>28.180</td><td>0.210</td><td>12.064</td><td>0.099</td><td>0.675</td></tr>
+              <tr><td>Depth Anything V2</td><td>0.788</td><td>36.055</td><td>0.259</td><td>14.207</td><td>0.000</td><td>0.566</td></tr>
+              <tr class="runner-up"><td>UniDepthV2</td><td>0.492</td><td>22.379</td><td>0.134</td><td>9.749</td><td>0.009</td><td>0.843</td></tr>
+              <tr><td>UniK3D</td><td>0.582</td><td>26.247</td><td>0.162</td><td>10.647</td><td>0.007</td><td>0.768</td></tr>
+              <tr class="group-start"><td rowspan="3"><span class="input-pill hsi">LWHSI · learned</span></td><td>Depth Anything V2–HSI</td><td>0.715</td><td>31.338</td><td>0.193</td><td>10.350</td><td>0.000</td><td>0.685</td></tr>
+              <tr class="best"><td>UniDepthV2–HSI <span class="best-tag">best</span></td><td>0.489</td><td>22.194</td><td>0.130</td><td>9.274</td><td>0.013</td><td>0.853</td></tr>
+              <tr><td>UniK3D–HSI</td><td>0.526</td><td>23.735</td><td>0.134</td><td>9.284</td><td>0.006</td><td>0.839</td></tr>
+              <tr class="group-start"><td rowspan="3"><span class="input-pill physics">LWHSI · physics</span></td><td>Hyperspectral optimization</td><td>1.983</td><td>68.528</td><td>0.418</td><td>20.031</td><td class="best-cell">0.114</td><td>0.346</td></tr>
+              <tr><td>Bispectral</td><td>9.745</td><td>389.727</td><td>0.355</td><td>15.914</td><td>0.057</td><td>0.400</td></tr>
+              <tr><td>Quadspectral</td><td>6.920</td><td>302.867</td><td>0.354</td><td>16.538</td><td>0.067</td><td>0.386</td></tr>
+            </tbody>
+          </table>
+        </section>
+        <p class="table-note">Initial zero-shot and adapted-baseline results. The benchmark is intended as a starting line, not a solved problem.</p>
+      </div>
+    </section>
+
+    <section class="section access-section" id="access">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <p class="kicker">05 / ACCESS</p>
+          <h2>Everything needed<br>to start measuring.</h2>
+          <p class="section-subtitle">Data artifacts are released under CC BY 4.0. The devkit and evaluator are MIT licensed.</p>
+        </div>
+
+        <div class="resource-grid">
+          <a class="resource-card reveal" href="https://huggingface.co/datasets/SemilleroCV/ih-depth" target="_blank" rel="noreferrer">
+            <div class="resource-icon hf-icon" aria-hidden="true">HF</div>
+            <div><p>HUGGING FACE</p><h3>Download the dataset</h3><span>Depth labels · geometry · correspondences · splits</span></div>
+            <b aria-hidden="true">↗</b>
+          </a>
+          <a class="resource-card reveal" data-delay="1" href="https://github.com/cvail-research/ih-depth-dataset" target="_blank" rel="noreferrer">
+            <div class="resource-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.88c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.82a9.5 9.5 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.77c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            </div>
+            <div><p>GITHUB</p><h3>Use the devkit</h3><span>Baseline adapters · evaluator · preparation tools</span></div>
+            <b aria-hidden="true">↗</b>
+          </a>
+        </div>
+
+        <div class="quickstart reveal">
+          <div class="quickstart-copy">
+            <p class="micro-label">QUICKSTART</p>
+            <h3>Evaluate predictions in three commands.</h3>
+            <p>The evaluator reports common metric and scale-and-shift-invariant depth measures on the fixed test split.</p>
+          </div>
+          <div class="code-panel">
+            <div class="code-top"><span><i></i><i></i><i></i></span><button type="button" data-copy data-copy-target="quickstart-code">Copy</button></div>
+            <pre id="quickstart-code"><code><span class="code-muted"># clone and install</span>
+git clone https://github.com/cvail-research/ih-depth-dataset.git
+cd ih-depth-dataset &amp;&amp; uv sync
+
+<span class="code-muted"># evaluate a mirrored prediction tree</span>
+uv run python ihd/ihd_evaluator.py GT_DIR PREDICTION_DIR</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-grid" aria-hidden="true"></div>
+      <div class="shell closing-inner reveal">
+        <p class="kicker">A NEW TESTBED FOR PASSIVE PERCEPTION</p>
+        <h2>What can 256 thermal bands reveal about distance?</h2>
+        <p>IH-Depth makes that question measurable.</p>
+        <div class="hero-actions centered-actions">
+          <a class="button button-primary" href="https://huggingface.co/datasets/SemilleroCV/ih-depth" target="_blank" rel="noreferrer">Get the dataset <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://github.com/cvail-research/ih-depth-dataset" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <a class="wordmark" href="#top"><span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>IH–DEPTH</span></a>
+      <p>Curated from the <a href="https://registry.opendata.aws/darpa-invisible-headlights/" target="_blank" rel="noreferrer">Invisible Headlights dataset</a>.</p>
+      <p>© 2026 IH-Depth</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
