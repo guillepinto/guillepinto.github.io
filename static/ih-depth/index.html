@@ -128,18 +128,15 @@
 
       <div class="shell details-grid">
         <article class="detail-card reveal">
-          <div class="detail-index">A</div>
-          <h3>Real field data</h3>
+          <h3><span class="detail-index">A.</span> Real field data</h3>
           <p>Off-road and mixed-terrain scenes captured by rotating line-scan instruments—not synthetic renderings.</p>
         </article>
         <article class="detail-card reveal" data-delay="1">
-          <div class="detail-index">B</div>
-          <h3>Metric supervision</h3>
+          <h3><span class="detail-index">B.</span> Metric supervision</h3>
           <p>Cleaned, high-resolution LiDAR is projected into image space with invalid pixels explicitly masked.</p>
         </article>
         <article class="detail-card reveal" data-delay="2">
-          <div class="detail-index">C</div>
-          <h3>Benchmark-ready</h3>
+          <h3><span class="detail-index">C.</span> Benchmark-ready</h3>
           <p>Fixed train/test splits, camera geometry, correspondences, baseline adapters, and a common evaluator.</p>
         </article>
       </div>
@@ -180,7 +177,7 @@
             <p>Statistical outlier removal and front-most rasterization produce sparse metric labels.</p>
           </article>
           <article class="pipeline-step reveal" data-delay="3">
-            <div class="step-top"><span>04</span></div>
+            <div class="step-top"><span>04</span><i></i></div>
             <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 25 18 35 40 13"/><path class="accent-stroke" d="M9 10h14M9 16h8M31 35h8"/></svg>
             <h3>Verify</h3>
             <p>Quantitative thresholds and visual inspection reject unstable or misaligned projections.</p>
@@ -323,7 +320,7 @@ uv run python ihd/ihd_evaluator.py GT_DIR PREDICTION_DIR</code></pre>
       <div class="closing-grid" aria-hidden="true"></div>
       <div class="shell closing-inner reveal">
         <p class="kicker">A NEW TESTBED FOR PASSIVE PERCEPTION</p>
-        <h2>What can 256 thermal bands reveal about distance?</h2>
+        <h2>What can thermal spectra reveal about distance?</h2>
         <p>IH-Depth makes that question measurable.</p>
         <div class="hero-actions centered-actions">
           <a class="button button-primary" href="https://huggingface.co/datasets/SemilleroCV/ih-depth" target="_blank" rel="noreferrer">Get the dataset <span aria-hidden="true">↗</span></a>

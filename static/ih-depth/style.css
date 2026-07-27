@@ -166,8 +166,8 @@ button, input { font: inherit; }
 .details-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 42px; border-block: 1px solid var(--line); }
 .detail-card { position: relative; padding: 38px 34px 40px; border-right: 1px solid var(--line); }
 .detail-card:first-child { border-left: 1px solid var(--line); }
-.detail-index { color: var(--acid); font-family: "DM Mono", monospace; font-size: 11px; }
-.detail-card h3 { margin: 37px 0 11px; font-size: 18px; }
+.detail-index { color: var(--acid); font-family: "DM Mono", monospace; font-size: 1em; }
+.detail-card h3 { display: flex; gap: .45em; align-items: baseline; margin: 0 0 11px; font-size: 18px; }
 .detail-card p { margin: 0; color: var(--ink-soft); font-size: 14px; }
 
 .curation-section { background: #0a1512; border-block: 1px solid var(--line); }
@@ -338,7 +338,6 @@ pre { margin: 0; padding: 24px; overflow-x: auto; color: #dce9e1; font-family: "
   .details-grid { grid-template-columns: 1fr; }
   .detail-card, .detail-card:first-child { border-inline: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .detail-card:last-child { border-bottom: 0; }
-  .detail-card h3 { margin-top: 20px; }
   .pipeline { grid-template-columns: 1fr; }
   .pipeline-step, .pipeline-step:nth-child(3) { min-height: 0; border-inline: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .pipeline-step svg { margin: 30px 0 23px; }
