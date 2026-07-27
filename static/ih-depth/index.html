@@ -78,8 +78,12 @@
               </div>
               <div class="comparison-divider" aria-hidden="true"><span>↔</span></div>
               <input type="range" min="0" max="100" value="54" aria-label="Compare thermal image with registered depth" data-comparison-slider>
-              <span class="image-chip chip-left">LWHSI</span>
-              <span class="image-chip chip-right">METRIC DEPTH</span>
+              <div class="comparison-label-layer depth-label-layer" aria-hidden="true">
+                <span class="image-chip chip-left">METRIC DEPTH</span>
+              </div>
+              <div class="comparison-label-layer thermal-label-layer" aria-hidden="true">
+                <span class="image-chip chip-right">LWHSI</span>
+              </div>
             </div>
             <div class="visual-footer">
               <span>Drag to inspect</span>
