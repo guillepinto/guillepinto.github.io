@@ -61,10 +61,11 @@ button, input { font: inherit; }
 }
 .nav-wrap { height: 76px; display: flex; align-items: center; justify-content: space-between; }
 .wordmark { display: inline-flex; gap: 11px; align-items: center; color: var(--ink); font-size: 14px; font-weight: 800; letter-spacing: .11em; text-decoration: none; }
-.wordmark-mark { display: grid; width: 25px; height: 25px; grid-template-columns: repeat(3, 1fr); gap: 2px; transform: skewY(-8deg); }
-.wordmark-mark i { display: block; background: var(--cyan); }
-.wordmark-mark i:nth-child(2) { background: var(--acid); }
-.wordmark-mark i:nth-child(3) { background: var(--amber); }
+.wordmark-mark { display: grid; width: 30px; height: 25px; grid-template-columns: repeat(4, 1fr); gap: 2px; transform: skewY(-8deg); }
+.wordmark-mark i { display: block; background: linear-gradient(180deg, #ff3b30 0%, #ff8a00 14%, #ffe600 28%, #35d05b 44%, #20d8d8 60%, #2878ff 74%, #3f42d7 87%, #8a2be2 100%); }
+.wordmark-mark i:nth-child(2) { background: #ff5b50; }
+.wordmark-mark i:nth-child(3) { background: #bd3d42; }
+.wordmark-mark i:nth-child(4) { background: #702b34; }
 .nav-links { display: flex; align-items: center; gap: 28px; }
 .nav-links a { color: var(--ink-soft); font-size: 13px; font-weight: 600; text-decoration: none; transition: color .2s ease; }
 .nav-links a:hover { color: var(--ink); }
