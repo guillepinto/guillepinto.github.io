@@ -1,0 +1,22 @@
+name: Guillermo Pinto
+short_name: Guille Pinto
+role: AI researcher
+intro: Curious about artificial intelligence.
+interests: I find it fun to build projects in deep learning and computer vision.
+links:
+  - name: GitHub
+    detail: Code & projects
+    url: https://github.com/guillepinto
+    icon: github
+  - name: LinkedIn
+    detail: Career & milestones
+    url: https://www.linkedin.com/in/guillepinto/
+    icon: linkedin
+  - name: X / Twitter
+    detail: Thoughts & conversations
+    url: https://x.com/gllpinto
+    icon: x
+  - name: Google Scholar
+    detail: Research & publications
+    url: https://scholar.google.com/citations?user=YdTc1bcAAAAJ&hl=en
+    icon: scholar
