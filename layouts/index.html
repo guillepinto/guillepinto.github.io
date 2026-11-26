@@ -11,6 +11,7 @@
 </head>
 <body>
   <div class="landscape" aria-hidden="true"></div>
+  <canvas id="depth-lens" class="depth-lens" aria-hidden="true" data-image="{{ "images/supra-waabi-concept.png" | relURL }}" data-depth="{{ "images/supra-waabi-depth.png" | relURL }}"></canvas>
   <div class="shade" aria-hidden="true"></div>
   <div class="page">
     <header><a class="wordmark" href="{{ "/" | relURL }}" aria-label="Guillermo Pinto home">gp<span>.</span></a><span class="header-note">PURSUING THE GREAT</span></header>
@@ -45,5 +46,6 @@
     document.getElementById('quote-text').textContent = `“${quote.text}”`;
     document.getElementById('quote-author').textContent = quote.author || 'Attribution pending';
   </script>
+  <script src="{{ "depth-lens.js" | relURL }}" defer></script>
 </body>
 </html>
